@@ -6,7 +6,7 @@ const timer1 = function(alarms) {
   for (const alarm of alarms) {
     let alarmInt = Number(alarm);
 
-    if (alarmInt < 0 || !Number.isInteger) {
+    if (alarmInt < 0 || !Number.isInteger(alarmInt)) {
       continue;
     }
 
